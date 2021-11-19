@@ -4,12 +4,14 @@
   "version": "1.0.0",
   "description": "Hollow Knight mask shards, vessel fragments and pale ore checklist",
   "scripts": {
-    "build": "./build.sh"
+    "build": "./build.sh",
+    "serve": "serve dist -l tcp://127.0.0.1:5005"
   },
   "keywords": [],
   "author": "Lera Rosalene <lerarosalene@outlook.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "minify": "^8.0.3"
+    "minify": "^8.0.3",
+    "serve": "^13.0.2"
   }
 }
