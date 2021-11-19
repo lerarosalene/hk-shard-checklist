@@ -1,3 +1,16 @@
+function updateSectionCounter(section, name) {
+  const counter = document.querySelector(`[data-counter-for="${name}"]`);
+  if (!counter) {
+    return;
+  }
+  const checkboxes = section.querySelectorAll("input");
+  const count = [...checkboxes].reduce(
+    (acc, entry) => acc + (entry.checked ? 1 : 0),
+    0
+  );
+  counter.innerText = `(${count}/${checkboxes.length})`;
+}
+
 function initSection(section, name) {
   const localStorageEntryName = `hk-completion-${name}`;
 
@@ -26,6 +39,7 @@ function initSection(section, name) {
     check.addEventListener("change", function (evt) {
       const row = evt.target.parentElement.parentElement;
       row.classList.toggle("row-cleared", evt.target.checked);
+      updateSectionCounter(section, name);
       if (evt.target.checked) {
         checked.add(row.dataset.name);
       } else {
@@ -34,6 +48,8 @@ function initSection(section, name) {
       localStorage.setItem(localStorageEntryName, JSON.stringify([...checked]));
     });
   }
+
+  updateSectionCounter(section, name);
 }
 
 const sections = document.querySelectorAll("[data-section]");
