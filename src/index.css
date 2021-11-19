@@ -1,0 +1,30 @@
+.container {
+  width: fit-content;
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+table td {
+  cursor: pointer;
+}
+
+h1 {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row-cleared {
+  color: rgba(180, 180, 180, 1);
+}
