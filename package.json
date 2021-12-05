@@ -11,6 +11,7 @@
   "author": "Lera Rosalene <lerarosalene@outlook.com>",
   "license": "UNLICENSED",
   "dependencies": {
+    "coffeescript": "^2.6.1",
     "minify": "^8.0.3",
     "serve": "^13.0.2"
   }
