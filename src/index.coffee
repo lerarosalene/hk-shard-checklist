@@ -45,3 +45,5 @@ for section from sections
   name = section.dataset.section
   continue unless name
   initSection section, name
+
+document.querySelector("#main").classList.remove("hidden")

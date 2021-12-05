@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .container {
   width: fit-content;
   max-width: 135ch;
