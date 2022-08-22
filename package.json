@@ -4,15 +4,23 @@
   "version": "1.0.0",
   "description": "Hollow Knight mask shards, vessel fragments and pale ore checklist",
   "scripts": {
-    "build": "./build.sh",
+    "build": "node build.js",
     "serve": "serve dist -l tcp://127.0.0.1:5005"
   },
   "keywords": [],
   "author": "Lera Rosalene <lerarosalene@outlook.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "coffeescript": "^2.6.1",
-    "minify": "^8.0.3",
-    "serve": "^13.0.2"
+    "@reduxjs/toolkit": "^1.8.5",
+    "@types/react-dom": "^18.0.6",
+    "classnames": "^2.3.1",
+    "esbuild": "^0.15.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "redux-saga": "^1.2.1",
+    "serve": "^13.0.2",
+    "typescript": "^4.7.4",
+    "yaml": "^2.1.1"
   }
 }

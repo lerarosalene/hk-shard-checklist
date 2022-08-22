@@ -1,0 +1,127 @@
+- id: shards
+  name: Осколки маски
+  entries:
+    - id: shards-sly-1
+      name: Слай в Грязьмуте за 150
+    - id: shards-sly-2
+      name: Слай в Грязьмуте за 500
+    - id: shards-sly-3
+      name: Слай в Грязьмуте за 800
+      requirements: Ключ лавочника
+    - id: shards-sly-4
+      name: Слай в Грязьмуте за 1500
+      requirements: Ключ лавочника
+    - id: shards-bretta
+      name: В домике Бретты, после спасения Бретты в Грибных пустошах
+      requirements: Накидка мотылька и клешня богомола
+    - id: shards-deepnest
+      name: В Глубинном гнезде, проход через Грибницу
+      requirements: Монаршие крылья
+    - id: shards-queen-station
+      name: На Вокзале Королевы, с правой стороны
+      requirements: Накидка мотылька и клешня богомола
+    - id: shards-grey-mourner
+      name: Серая плакальщица в Землях упокоения
+      requirements: Выполнение задания с нежным цветком, Слеза Измы
+    - id: shards-hive
+      name: За непрочной стеной в Улье
+      requirements: Таран Стража Улья в непрочную стену, Проездной, Монаршие крылья
+    - id: shards-brooding-mawlek
+      name: Победа над Задумчивым чревнем
+    - id: shards-grubs
+      name: Отец гусеничек
+      requirements: Освободить 5 гусеничек
+    - id: shards-enraged-guardian
+      name: Победа над Кристаллическим стражем во 2-ой раз
+      requirements: Монаршие крылья
+    - id: shards-royal-waterways
+      name: Королевские стоки
+      requirements: Простой ключ
+    - id: shards-resting-grounds
+      name: Провидица в Землях упокоения
+      requirements: Получение 1500 Сущности
+    - id: shards-stone-sanctuary
+      name: Каменное святилище
+      requirements: Светомуший фонарь (значительно облегчит получение, но не обязателен)
+    - id: shards-forgotten-crossroads
+      name: Комната с Жрунами на Забытом перепутье
+      requirements: Клешня богомола
+
+- id: vessel-fragments
+  name: Черепки сосуда
+  entries:
+    - id: vessel-fragments-sly-1
+      name: Слай в Грязьмуте за 550
+    - id: vessel-fragments-sly-2
+      name: Слай в Грязьмуте за 900
+      requirements: Ключ лавочника
+    - id: vessel-fragments-sly-3
+      name: Зелёная тропа
+    - id: vessel-fragments-forgotten-crossroads
+      name: Слева от лифта на Забытом перепутье
+      requirements: Разблокировка лифта в Городе слёз
+    - id: vessel-fragments-king-station
+      name: Над Вокзалом Короля, возле лифта
+      requirements: Одолеть несколько волн стражников
+    - id: vessel-fragments-deepnest
+      name: В Глубинном гнезде, над рабочим трамваем
+    - id: vessel-fragments-stag-nest
+      name: Гнездо рогачей
+    - id: vessel-fragments-resting-grounds
+      name: Провидица в Землях упокоения
+      requirements: После получения 700 Сущности
+    - id: vessel-fragments-ancient-basin
+      name: Фонтан в Древнем котловане
+      requirements: Пожертвование 3000 в фонтан
+
+- id: pale-ore
+  name: Бледная руда
+  entries:
+    - id: pale-ore-anceint-basin
+      name: В локации Древний котлован под трамвайными путями, слева от главного
+        входа.
+      requirements: Победить двух Низших чревней, охраняющих руду.
+    - id: pale-ore-hallownests-crown
+      name: На Венце Халлоунеста, у пьедестала статуи Лучезарности.
+      requirements: Необходимы монаршие крылья.
+    - id: pale-ore-nosk
+      name: Находится в секретном месте в Глубинном гнезде, доступ к которому можно
+        получить, разбив стену в комнате слева от горячих источников.
+      requirements: Победить босса Носк.
+    - id: pale-ore-grubs
+      name: Можно получить от Отца гусеничек.
+      requirements: Освободить 31 гусеничку.
+    - id: pale-ore-resting-grounds
+      name: Даёт Провидица.
+      requirements: Собрать 300 Сущности при помощи Гвоздя грёз.
+    - id: pale-ore-colosseum-of-fools
+      name: Награда в Колизее глупцов.
+      requirements: Завершить Испытание завоевателя.
+
+- id: notches
+  name: Ячейки амулетов
+  entries:
+    - id: notches-salubra-1
+      name: Салюбра на Забытом перепутье за 120
+      requirements: Наличие 5 амулетов
+    - id: notches-salubra-2
+      name: Салюбра на Забытом перепутье за 500
+      requirements: Наличие 10 амулетов
+    - id: notches-salubra-3
+      name: Салюбра на Забытом перепутье за 900
+      requirements: Наличие 18 амулетов
+    - id: notches-salubra-4
+      name: Салюбра на Забытом перепутье за 1400
+      requirements: Наличие 25 амулетов
+    - id: notches-fog-canyon
+      name: Над местоположением Корнифера в Туманном каньоне
+      requirements: Наличие теневой накидки/слезы Измы
+    - id: notches-fungal-wastes
+      name: Грибные пустоши
+      requirements: Убийство двух Грибных великанов
+    - id: notches-colosseum-of-fools
+      name: Награда в Колизее глупцов
+      requirements: Завершить Испытание воина
+    - id: notches-grimm
+      name: Грязьмут
+      requirements: Победить Гримма

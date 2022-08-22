@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "modules/*": ["./src/modules/*"],
+      "store": ["./src/store.ts"],
+      "components/*": ["./src/components/*"]
+    },
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "jsx": "react",
+    "target": "es6",
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
