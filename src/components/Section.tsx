@@ -4,16 +4,19 @@ import { NestedSection, selectSectionsClearedCount } from 'modules/list/slice';
 import { Entry } from './Entry';
 
 interface Props {
-  section: NestedSection
+  section: NestedSection;
+  counts: {
+    cleared: number;
+    all: number;
+  }
 }
 
 export function Section(props: Props) {
-  const { section } = props;
-  const counts = useSelector(selectSectionsClearedCount);
+  const { section, counts } = props;
 
   return (
     <>
-      <h1>{section.name} ({counts[section.id].cleared}/{counts[section.id].all})</h1>
+      <h1>{section.name} ({counts.cleared}/{counts.all})</h1>
       <table>
         <thead>
           <th colSpan={2}>№</th>

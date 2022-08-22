@@ -1,16 +1,22 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import { selectListData } from "modules/list/slice";
+import { selectListData, selectLoaded, selectSectionsClearedCount } from "modules/list/slice";
 import { Section } from "./Section";
 
 export function App() {
   const sections = useSelector(selectListData);
+  const loaded = useSelector(selectLoaded);
+  const counts = useSelector(selectSectionsClearedCount);
 
   return (
     <>
-      {sections.map(section => (
-        <Section section={section} key={section.id} />
+      {loaded && sections.map(section => (
+        <Section
+          counts={counts[section.id]}
+          section={section}
+          key={section.id}
+        />
       ))}
     </>
   );

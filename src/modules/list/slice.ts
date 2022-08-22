@@ -189,3 +189,5 @@ export const selectClearedEntries = createSelector(
     return result;
   }
 );
+
+export const selectLoaded = (root: RootState) => root.list.loaded;
