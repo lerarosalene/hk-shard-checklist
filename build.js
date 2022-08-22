@@ -1,13 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
-const YAML = require('yaml');
 const esbuild = require('esbuild');
-
-async function data() {
-  const contents = await fs.readFile(path.join('src', 'data.yaml'), 'utf-8');
-  const data = YAML.parse(contents);
-  await fs.writeFile(path.join('dist', 'data.json'), JSON.stringify(data));
-}
 
 async function ts() {
   await esbuild.build({
@@ -32,7 +25,6 @@ async function static() {
 async function main() {
   await fs.mkdir('dist', { recursive: true });
   await Promise.all([
-    data(),
     ts(),
     static(),
   ]);

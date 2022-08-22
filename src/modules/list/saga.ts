@@ -1,15 +1,11 @@
-import { takeEvery, put, call, select } from "redux-saga/effects";
-import { JsonData, LOAD_DATA, selectClearedEntries, setContents, setDone, setDoneBatch, setLoaded } from "./slice";
-
-type UnWrap<T> = T extends (...args: any[]) => Promise<infer U> ? U : never;
+import { takeEvery, put, select } from "redux-saga/effects";
+import { LOAD_DATA, selectClearedEntries, setContents, setDone, setDoneBatch, setLoaded } from "./slice";
+import data from "data";
 
 const LOCAL_STORAGE_KEY = 'hk-completion';
 
 function* loadDataSaga() {
   try {
-    const response: UnWrap<typeof fetch> = yield call(fetch, "./data.json");
-    const data: JsonData = yield call([response, "json"]);
-
     yield put(setContents(data));
 
     const savedData = localStorage.getItem(LOCAL_STORAGE_KEY);

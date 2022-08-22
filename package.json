@@ -5,6 +5,9 @@
   "description": "Hollow Knight mask shards, vessel fragments and pale ore checklist",
   "scripts": {
     "build": "node build.js",
+    "codegen": "node codegen.js",
+    "typecheck": "tsc",
+    "prebuild": "npm run codegen && npm run typecheck",
     "serve": "serve dist -l tcp://127.0.0.1:5005"
   },
   "keywords": [],

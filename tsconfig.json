@@ -3,7 +3,8 @@
     "paths": {
       "modules/*": ["./src/modules/*"],
       "store": ["./src/store.ts"],
-      "components/*": ["./src/components/*"]
+      "components/*": ["./src/components/*"],
+      "data": ["./src/data"],
     },
     "strict": true,
     "skipLibCheck": true,
